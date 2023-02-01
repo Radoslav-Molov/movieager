@@ -1,0 +1,65 @@
+header {
+  background: #0c2738;
+  padding: 0px 22px;
+  height: 70px;
+}
+
+.logo-bottom {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+.nav {
+  float: right;
+  margin-top: -18px;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+  margin-top: 22px;
+  padding-right: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  color: #899ead;
+}
+a:hover {
+  color: white;
+}
+
+.active a {
+  color: white !important;
+  border-bottom: 2px solid #f1b722 !important;
+  padding-bottom: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-bottom {
+    margin-left: -30px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .nav {
+    display: block;
+    position: absolute;
+    background: #0c2738;
+    width: 100%;
+    text-align: left;
+    left: 0;
+    top: 102px;
+
+    ul li {
+      float: none;
+    }
+  }
+
+  .nav {
+    display: none;
+  }
+}

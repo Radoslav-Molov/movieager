@@ -1,0 +1,73 @@
+.box1 {
+  width: 23.1%;
+  float: left;
+  margin: 10px;
+  margin-top: 35px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.box1:hover {
+  z-index: 100;
+  -webkit-animation: scale 1s linear;
+  -moz-animation: scale 1s linear;
+  animation: scale 1s linear;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  background-color: #0c2738;
+  border-radius: 9px;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    -webkit-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.star1 {
+  margin-top: 20px;
+  width: 80px !important;
+}
+
+.p2 {
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.tag {
+  color: #cad3da;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .box1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .box1 {
+    width: 47.1%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .box1 {
+    width: 47.1%;
+  }
+}
